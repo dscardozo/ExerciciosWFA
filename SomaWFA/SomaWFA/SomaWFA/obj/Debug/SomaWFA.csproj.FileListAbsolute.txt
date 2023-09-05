@@ -1,0 +1,22 @@
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\bin\Debug\SomaWFA.exe.config
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\bin\Debug\SomaWFA.exe
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\bin\Debug\SomaWFA.pdb
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\obj\Debug\SomaWFA.csproj.AssemblyReference.cache
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\obj\Debug\SomaWFA.csproj.SuggestedBindingRedirects.cache
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\obj\Debug\SomaWFA.Form1.resources
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\obj\Debug\SomaWFA.Properties.Resources.resources
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\obj\Debug\SomaWFA.csproj.GenerateResource.cache
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\obj\Debug\SomaWFA.csproj.CoreCompileInputs.cache
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\obj\Debug\SomaWFA.exe
+C:\Users\rafael.dias\source\repos\SomaWFA\SomaWFA\obj\Debug\SomaWFA.pdb
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\bin\Debug\SomaWFA.exe.config
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\bin\Debug\SomaWFA.exe
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\bin\Debug\SomaWFA.pdb
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\obj\Debug\SomaWFA.csproj.AssemblyReference.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\obj\Debug\SomaWFA.csproj.SuggestedBindingRedirects.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\obj\Debug\SomaWFA.Form1.resources
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\obj\Debug\SomaWFA.Properties.Resources.resources
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\obj\Debug\SomaWFA.csproj.GenerateResource.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\obj\Debug\SomaWFA.csproj.CoreCompileInputs.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\obj\Debug\SomaWFA.exe
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\SomaWFA\SomaWFA\SomaWFA\obj\Debug\SomaWFA.pdb

@@ -1,0 +1,22 @@
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\bin\Debug\MediaNota.exe.config
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\bin\Debug\MediaNota.exe
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\bin\Debug\MediaNota.pdb
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\obj\Debug\MediaNota.csproj.AssemblyReference.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\obj\Debug\MediaNota.csproj.SuggestedBindingRedirects.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\obj\Debug\MediaNota.Form1.resources
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\obj\Debug\MediaNota.Properties.Resources.resources
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\obj\Debug\MediaNota.csproj.GenerateResource.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\obj\Debug\MediaNota.csproj.CoreCompileInputs.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\obj\Debug\MediaNota.exe
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\MediaNota\MediaNota\obj\Debug\MediaNota.pdb
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\bin\Debug\MediaNota.exe.config
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\bin\Debug\MediaNota.exe
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\bin\Debug\MediaNota.pdb
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\obj\Debug\MediaNota.csproj.AssemblyReference.cache
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\obj\Debug\MediaNota.csproj.SuggestedBindingRedirects.cache
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\obj\Debug\MediaNota.Form1.resources
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\obj\Debug\MediaNota.Properties.Resources.resources
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\obj\Debug\MediaNota.csproj.GenerateResource.cache
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\obj\Debug\MediaNota.csproj.CoreCompileInputs.cache
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\obj\Debug\MediaNota.exe
+C:\Users\danilo.scardoso4\source\repos\ExerciciosWFA\MediaNota\MediaNota\obj\Debug\MediaNota.pdb

@@ -1,0 +1,22 @@
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\bin\Debug\OlaMundoWFA.exe.config
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\bin\Debug\OlaMundoWFA.exe
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\bin\Debug\OlaMundoWFA.pdb
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.csproj.AssemblyReference.cache
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.csproj.SuggestedBindingRedirects.cache
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.Form1.resources
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.Properties.Resources.resources
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.csproj.GenerateResource.cache
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.csproj.CoreCompileInputs.cache
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.exe
+C:\Users\rafael.dias\source\repos\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.pdb
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\bin\Debug\OlaMundoWFA.exe.config
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\bin\Debug\OlaMundoWFA.exe
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\bin\Debug\OlaMundoWFA.pdb
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.csproj.AssemblyReference.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.csproj.SuggestedBindingRedirects.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.Form1.resources
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.Properties.Resources.resources
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.csproj.GenerateResource.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.csproj.CoreCompileInputs.cache
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.exe
+C:\Users\dscar\OneDrive - SENAC - SP\Senac\UC12\OlaMundoWFA\OlaMundoWFA\OlaMundoWFA\obj\Debug\OlaMundoWFA.pdb

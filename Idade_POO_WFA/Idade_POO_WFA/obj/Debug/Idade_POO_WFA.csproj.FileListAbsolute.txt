@@ -1,0 +1,22 @@
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\bin\Debug\Idade_POO_WFA.exe.config
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\bin\Debug\Idade_POO_WFA.exe
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\bin\Debug\Idade_POO_WFA.pdb
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.csproj.AssemblyReference.cache
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.csproj.SuggestedBindingRedirects.cache
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.Form1.resources
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.Properties.Resources.resources
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.csproj.GenerateResource.cache
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.csproj.CoreCompileInputs.cache
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.exe
+C:\Users\rafael.dias\source\repos\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.pdb
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\bin\Debug\Idade_POO_WFA.exe.config
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\bin\Debug\Idade_POO_WFA.exe
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\bin\Debug\Idade_POO_WFA.pdb
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.csproj.AssemblyReference.cache
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.csproj.SuggestedBindingRedirects.cache
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.Form1.resources
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.Properties.Resources.resources
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.csproj.GenerateResource.cache
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.csproj.CoreCompileInputs.cache
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.exe
+C:\Users\dscar\OneDrive - SENAC - SP\repos\ExerciciosWFA\Idade_POO_WFA\Idade_POO_WFA\obj\Debug\Idade_POO_WFA.pdb
