@@ -94,6 +94,7 @@ namespace Escola_POO_BASE.Telas
             TelaCadProfessor tlCadProf = new TelaCadProfessor(_userLogado);         
 
             tlCadProf.MdiParent = this;
+            
             tlCadProf.Show();
         }
 

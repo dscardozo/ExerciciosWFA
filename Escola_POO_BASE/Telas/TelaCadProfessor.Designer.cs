@@ -38,20 +38,20 @@
             this.LblIdProf = new System.Windows.Forms.Label();
             this.LblNivelAcesso = new System.Windows.Forms.Label();
             this.TxtCpf = new System.Windows.Forms.TextBox();
-            this.BtnAlterar = new System.Windows.Forms.Button();
-            this.BtnNovo = new System.Windows.Forms.Button();
-            this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnLimpar = new System.Windows.Forms.Button();
             this.DtpDtNascimentoTlCadP = new System.Windows.Forms.DateTimePicker();
+            this.BtnNovo = new System.Windows.Forms.Button();
+            this.BtnLimpar = new System.Windows.Forms.Button();
             this.CkbAtivoTlCadastro = new System.Windows.Forms.CheckBox();
-            this.BtnCadastrarTlCad = new System.Windows.Forms.Button();
+            this.BtnCancelar = new System.Windows.Forms.Button();
             this.TxtEmailTlCadP = new System.Windows.Forms.TextBox();
+            this.BtnAlterar = new System.Windows.Forms.Button();
             this.TxtNomeTlCadP = new System.Windows.Forms.TextBox();
+            this.BtnCadastrarTlCad = new System.Windows.Forms.Button();
             this.LblId = new System.Windows.Forms.Label();
-            this.LblNomeCadAluno = new System.Windows.Forms.Label();
             this.LblDtNasc = new System.Windows.Forms.Label();
-            this.LblEmail = new System.Windows.Forms.Label();
             this.LblCpf = new System.Windows.Forms.Label();
+            this.LblNomeCadAluno = new System.Windows.Forms.Label();
+            this.LblEmail = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.BtnLimparBusca = new System.Windows.Forms.Button();
@@ -187,20 +187,16 @@
             this.TxtCpf.Size = new System.Drawing.Size(145, 24);
             this.TxtCpf.TabIndex = 22;
             // 
-            // BtnAlterar
+            // DtpDtNascimentoTlCadP
             // 
-            this.BtnAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.BtnAlterar.Enabled = false;
-            this.BtnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAlterar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnAlterar.Location = new System.Drawing.Point(559, 95);
-            this.BtnAlterar.Name = "BtnAlterar";
-            this.BtnAlterar.Size = new System.Drawing.Size(121, 29);
-            this.BtnAlterar.TabIndex = 21;
-            this.BtnAlterar.Text = "ALTERAR";
-            this.BtnAlterar.UseVisualStyleBackColor = false;
-            this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
+            this.DtpDtNascimentoTlCadP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DtpDtNascimentoTlCadP.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
+            this.DtpDtNascimentoTlCadP.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.DtpDtNascimentoTlCadP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DtpDtNascimentoTlCadP.Location = new System.Drawing.Point(9, 106);
+            this.DtpDtNascimentoTlCadP.Name = "DtpDtNascimentoTlCadP";
+            this.DtpDtNascimentoTlCadP.Size = new System.Drawing.Size(254, 20);
+            this.DtpDtNascimentoTlCadP.TabIndex = 16;
             // 
             // BtnNovo
             // 
@@ -216,20 +212,6 @@
             this.BtnNovo.UseVisualStyleBackColor = false;
             this.BtnNovo.Click += new System.EventHandler(this.BtnNovo_Click);
             // 
-            // BtnCancelar
-            // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnCancelar.Location = new System.Drawing.Point(559, 130);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(121, 29);
-            this.BtnCancelar.TabIndex = 19;
-            this.BtnCancelar.Text = "CANCELAR";
-            this.BtnCancelar.UseVisualStyleBackColor = false;
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
-            // 
             // BtnLimpar
             // 
             this.BtnLimpar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
@@ -244,17 +226,6 @@
             this.BtnLimpar.UseVisualStyleBackColor = false;
             this.BtnLimpar.Click += new System.EventHandler(this.BtnLimpar_Click);
             // 
-            // DtpDtNascimentoTlCadP
-            // 
-            this.DtpDtNascimentoTlCadP.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtpDtNascimentoTlCadP.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
-            this.DtpDtNascimentoTlCadP.CalendarTitleForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.DtpDtNascimentoTlCadP.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DtpDtNascimentoTlCadP.Location = new System.Drawing.Point(9, 106);
-            this.DtpDtNascimentoTlCadP.Name = "DtpDtNascimentoTlCadP";
-            this.DtpDtNascimentoTlCadP.Size = new System.Drawing.Size(254, 20);
-            this.DtpDtNascimentoTlCadP.TabIndex = 16;
-            // 
             // CkbAtivoTlCadastro
             // 
             this.CkbAtivoTlCadastro.AutoSize = true;
@@ -268,6 +239,51 @@
             this.CkbAtivoTlCadastro.TabIndex = 15;
             this.CkbAtivoTlCadastro.Text = "Ativo";
             this.CkbAtivoTlCadastro.UseVisualStyleBackColor = true;
+            // 
+            // BtnCancelar
+            // 
+            this.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
+            this.BtnCancelar.Location = new System.Drawing.Point(559, 130);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(121, 29);
+            this.BtnCancelar.TabIndex = 19;
+            this.BtnCancelar.Text = "CANCELAR";
+            this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            // 
+            // TxtEmailTlCadP
+            // 
+            this.TxtEmailTlCadP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtEmailTlCadP.Location = new System.Drawing.Point(271, 61);
+            this.TxtEmailTlCadP.Name = "TxtEmailTlCadP";
+            this.TxtEmailTlCadP.Size = new System.Drawing.Size(257, 24);
+            this.TxtEmailTlCadP.TabIndex = 11;
+            // 
+            // BtnAlterar
+            // 
+            this.BtnAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.BtnAlterar.Enabled = false;
+            this.BtnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAlterar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
+            this.BtnAlterar.Location = new System.Drawing.Point(559, 95);
+            this.BtnAlterar.Name = "BtnAlterar";
+            this.BtnAlterar.Size = new System.Drawing.Size(121, 29);
+            this.BtnAlterar.TabIndex = 21;
+            this.BtnAlterar.Text = "ALTERAR";
+            this.BtnAlterar.UseVisualStyleBackColor = false;
+            this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
+            // 
+            // TxtNomeTlCadP
+            // 
+            this.TxtNomeTlCadP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TxtNomeTlCadP.Location = new System.Drawing.Point(9, 61);
+            this.TxtNomeTlCadP.Name = "TxtNomeTlCadP";
+            this.TxtNomeTlCadP.Size = new System.Drawing.Size(257, 24);
+            this.TxtNomeTlCadP.TabIndex = 9;
             // 
             // BtnCadastrarTlCad
             // 
@@ -284,22 +300,6 @@
             this.BtnCadastrarTlCad.UseVisualStyleBackColor = false;
             this.BtnCadastrarTlCad.Click += new System.EventHandler(this.BtnCadastrarTlCad_Click);
             // 
-            // TxtEmailTlCadP
-            // 
-            this.TxtEmailTlCadP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtEmailTlCadP.Location = new System.Drawing.Point(271, 61);
-            this.TxtEmailTlCadP.Name = "TxtEmailTlCadP";
-            this.TxtEmailTlCadP.Size = new System.Drawing.Size(257, 24);
-            this.TxtEmailTlCadP.TabIndex = 11;
-            // 
-            // TxtNomeTlCadP
-            // 
-            this.TxtNomeTlCadP.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TxtNomeTlCadP.Location = new System.Drawing.Point(9, 61);
-            this.TxtNomeTlCadP.Name = "TxtNomeTlCadP";
-            this.TxtNomeTlCadP.Size = new System.Drawing.Size(257, 24);
-            this.TxtNomeTlCadP.TabIndex = 9;
-            // 
             // LblId
             // 
             this.LblId.AutoSize = true;
@@ -310,17 +310,6 @@
             this.LblId.Size = new System.Drawing.Size(88, 15);
             this.LblId.TabIndex = 7;
             this.LblId.Text = "Nº Registro :";
-            // 
-            // LblNomeCadAluno
-            // 
-            this.LblNomeCadAluno.AutoSize = true;
-            this.LblNomeCadAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblNomeCadAluno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.LblNomeCadAluno.Location = new System.Drawing.Point(6, 43);
-            this.LblNomeCadAluno.Name = "LblNomeCadAluno";
-            this.LblNomeCadAluno.Size = new System.Drawing.Size(118, 15);
-            this.LblNomeCadAluno.TabIndex = 0;
-            this.LblNomeCadAluno.Text = "Nome Completo :";
             // 
             // LblDtNasc
             // 
@@ -333,17 +322,6 @@
             this.LblDtNasc.TabIndex = 1;
             this.LblDtNasc.Text = "Data de Nascimento :";
             // 
-            // LblEmail
-            // 
-            this.LblEmail.AutoSize = true;
-            this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.LblEmail.Location = new System.Drawing.Point(268, 43);
-            this.LblEmail.Name = "LblEmail";
-            this.LblEmail.Size = new System.Drawing.Size(57, 15);
-            this.LblEmail.TabIndex = 2;
-            this.LblEmail.Text = "E-mail :";
-            // 
             // LblCpf
             // 
             this.LblCpf.AutoSize = true;
@@ -354,6 +332,28 @@
             this.LblCpf.Size = new System.Drawing.Size(41, 15);
             this.LblCpf.TabIndex = 4;
             this.LblCpf.Text = "CPF :";
+            // 
+            // LblNomeCadAluno
+            // 
+            this.LblNomeCadAluno.AutoSize = true;
+            this.LblNomeCadAluno.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblNomeCadAluno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
+            this.LblNomeCadAluno.Location = new System.Drawing.Point(6, 43);
+            this.LblNomeCadAluno.Name = "LblNomeCadAluno";
+            this.LblNomeCadAluno.Size = new System.Drawing.Size(118, 15);
+            this.LblNomeCadAluno.TabIndex = 0;
+            this.LblNomeCadAluno.Text = "Nome Completo :";
+            // 
+            // LblEmail
+            // 
+            this.LblEmail.AutoSize = true;
+            this.LblEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
+            this.LblEmail.Location = new System.Drawing.Point(268, 43);
+            this.LblEmail.Name = "LblEmail";
+            this.LblEmail.Size = new System.Drawing.Size(57, 15);
+            this.LblEmail.TabIndex = 2;
+            this.LblEmail.Text = "E-mail :";
             // 
             // pictureBox1
             // 
@@ -444,19 +444,20 @@
             // 
             // TelaCadProfessor
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(981, 648);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.GpbCadAluno);
             this.Controls.Add(this.DgvUsuariosP);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCadProfessor";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "Tela de Cadastro de Professores";
             this.Load += new System.EventHandler(this.TelaCadProfessor_Load);
+            this.Shown += new System.EventHandler(this.TelaCadProfessor_Shown);
             ((System.ComponentModel.ISupportInitialize)(this.DgvUsuariosP)).EndInit();
             this.GpbCadAluno.ResumeLayout(false);
             this.GpbCadAluno.PerformLayout();

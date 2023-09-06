@@ -62,10 +62,10 @@
             this.TslPerfil,
             this.TslPerfilLogado,
             this.TssDataHora});
-            this.StsBarraStatus.Location = new System.Drawing.Point(0, 503);
+            this.StsBarraStatus.Location = new System.Drawing.Point(0, 598);
             this.StsBarraStatus.Name = "StsBarraStatus";
             this.StsBarraStatus.Padding = new System.Windows.Forms.Padding(1, 0, 16, 0);
-            this.StsBarraStatus.Size = new System.Drawing.Size(780, 24);
+            this.StsBarraStatus.Size = new System.Drawing.Size(988, 24);
             this.StsBarraStatus.TabIndex = 2;
             // 
             // toolStripStatusLabel1
@@ -138,7 +138,7 @@
             this.TssDataHora.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.TssDataHora.Name = "TssDataHora";
             this.TssDataHora.RightToLeftAutoMirrorImage = true;
-            this.TssDataHora.Size = new System.Drawing.Size(321, 19);
+            this.TssDataHora.Size = new System.Drawing.Size(529, 19);
             this.TssDataHora.Spring = true;
             this.TssDataHora.Text = "quinta-feira,17 de agosto 2023 | 09:38:25";
             this.TssDataHora.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -154,7 +154,7 @@
             this.MnsMenu.Location = new System.Drawing.Point(0, 0);
             this.MnsMenu.Name = "MnsMenu";
             this.MnsMenu.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.MnsMenu.Size = new System.Drawing.Size(780, 24);
+            this.MnsMenu.Size = new System.Drawing.Size(988, 24);
             this.MnsMenu.TabIndex = 3;
             this.MnsMenu.Text = "menuStrip1";
             // 
@@ -193,7 +193,7 @@
             this.alunoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alunoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.alunoToolStripMenuItem.Name = "alunoToolStripMenuItem";
-            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.alunoToolStripMenuItem.Text = "Aluno";
             this.alunoToolStripMenuItem.Click += new System.EventHandler(this.alunoToolStripMenuItem_Click);
             // 
@@ -202,7 +202,7 @@
             this.professorToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.professorToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
-            this.professorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.professorToolStripMenuItem.Text = "Professor";
             this.professorToolStripMenuItem.Click += new System.EventHandler(this.professorToolStripMenuItem_Click);
             // 
@@ -225,8 +225,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoSize = true;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(780, 527);
+            this.ClientSize = new System.Drawing.Size(988, 622);
             this.Controls.Add(this.StsBarraStatus);
             this.Controls.Add(this.MnsMenu);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -237,6 +238,7 @@
             this.Name = "TelaPrincipal";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "TelaPrincipal";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.StsBarraStatus.ResumeLayout(false);
             this.StsBarraStatus.PerformLayout();

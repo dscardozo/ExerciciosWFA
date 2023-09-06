@@ -107,6 +107,7 @@ namespace Escola_POO_BASE.Telas
             BtnAlterar.Enabled = false;
             BtnReativar.Enabled = false;
             BtnReativar.FlatAppearance.BorderColor = Color.Salmon;
+            CbbBuscar.SelectedIndex = 0;
         }
 
         private void TelaCadProfessor_Load(object sender, EventArgs e)
@@ -352,6 +353,11 @@ namespace Escola_POO_BASE.Telas
             {
                 BtnBuscar.PerformClick();
             }
+        }
+
+        private void TelaCadProfessor_Shown(object sender, EventArgs e)
+        {
+            TxtBuscar.Focus();
         }
     }
 }

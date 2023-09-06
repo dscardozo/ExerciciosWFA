@@ -115,14 +115,14 @@
             this.GpbCadAluno.Controls.Add(this.DtpDtMatriculaTlCad);
             this.GpbCadAluno.Controls.Add(this.CkbAtivoTlCadastro);
             this.GpbCadAluno.Controls.Add(this.LblId);
-            this.GpbCadAluno.Controls.Add(this.BtnAlterar);
             this.GpbCadAluno.Controls.Add(this.DtpDtNascimentoTlCad);
             this.GpbCadAluno.Controls.Add(this.TxtNomeTlCad);
-            this.GpbCadAluno.Controls.Add(this.BtnCancelar);
+            this.GpbCadAluno.Controls.Add(this.BtnAlterar);
+            this.GpbCadAluno.Controls.Add(this.BtnNovo);
             this.GpbCadAluno.Controls.Add(this.LblNomeCadAluno);
             this.GpbCadAluno.Controls.Add(this.BtnCadastrarTlCad);
             this.GpbCadAluno.Controls.Add(this.LblDtMatricula);
-            this.GpbCadAluno.Controls.Add(this.BtnNovo);
+            this.GpbCadAluno.Controls.Add(this.BtnCancelar);
             this.GpbCadAluno.Controls.Add(this.TxtEmailTlCad);
             this.GpbCadAluno.Controls.Add(this.LblDtNasc);
             this.GpbCadAluno.Controls.Add(this.LblEmail);
@@ -130,7 +130,7 @@
             this.GpbCadAluno.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.GpbCadAluno.Location = new System.Drawing.Point(12, 12);
             this.GpbCadAluno.Name = "GpbCadAluno";
-            this.GpbCadAluno.Size = new System.Drawing.Size(670, 174);
+            this.GpbCadAluno.Size = new System.Drawing.Size(604, 174);
             this.GpbCadAluno.TabIndex = 7;
             this.GpbCadAluno.TabStop = false;
             this.GpbCadAluno.Text = "CADASTRO :";
@@ -142,7 +142,7 @@
             this.BtnReativar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnReativar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnReativar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnReativar.Location = new System.Drawing.Point(549, 140);
+            this.BtnReativar.Location = new System.Drawing.Point(482, 138);
             this.BtnReativar.Name = "BtnReativar";
             this.BtnReativar.Size = new System.Drawing.Size(112, 30);
             this.BtnReativar.TabIndex = 23;
@@ -175,7 +175,7 @@
             this.CkbAtivoTlCadastro.Checked = true;
             this.CkbAtivoTlCadastro.CheckState = System.Windows.Forms.CheckState.Checked;
             this.CkbAtivoTlCadastro.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.CkbAtivoTlCadastro.Location = new System.Drawing.Point(605, 16);
+            this.CkbAtivoTlCadastro.Location = new System.Drawing.Point(535, 16);
             this.CkbAtivoTlCadastro.Name = "CkbAtivoTlCadastro";
             this.CkbAtivoTlCadastro.Size = new System.Drawing.Size(56, 19);
             this.CkbAtivoTlCadastro.TabIndex = 15;
@@ -200,7 +200,7 @@
             this.BtnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnAlterar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnAlterar.Location = new System.Drawing.Point(280, 139);
+            this.BtnAlterar.Location = new System.Drawing.Point(246, 138);
             this.BtnAlterar.Name = "BtnAlterar";
             this.BtnAlterar.Size = new System.Drawing.Size(112, 29);
             this.BtnAlterar.TabIndex = 21;
@@ -233,7 +233,7 @@
             this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnCancelar.Location = new System.Drawing.Point(414, 140);
+            this.BtnCancelar.Location = new System.Drawing.Point(364, 138);
             this.BtnCancelar.Name = "BtnCancelar";
             this.BtnCancelar.Size = new System.Drawing.Size(112, 29);
             this.BtnCancelar.TabIndex = 19;
@@ -248,7 +248,7 @@
             this.BtnCadastrarTlCad.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnCadastrarTlCad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnCadastrarTlCad.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnCadastrarTlCad.Location = new System.Drawing.Point(144, 140);
+            this.BtnCadastrarTlCad.Location = new System.Drawing.Point(128, 139);
             this.BtnCadastrarTlCad.Name = "BtnCadastrarTlCad";
             this.BtnCadastrarTlCad.Size = new System.Drawing.Size(112, 28);
             this.BtnCadastrarTlCad.TabIndex = 14;
@@ -262,7 +262,7 @@
             this.BtnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.BtnNovo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnNovo.Location = new System.Drawing.Point(7, 139);
+            this.BtnNovo.Location = new System.Drawing.Point(10, 138);
             this.BtnNovo.Name = "BtnNovo";
             this.BtnNovo.Size = new System.Drawing.Size(112, 29);
             this.BtnNovo.TabIndex = 20;
@@ -315,13 +315,13 @@
             dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DgvUsuarios.DefaultCellStyle = dataGridViewCellStyle2;
-            this.DgvUsuarios.Location = new System.Drawing.Point(12, 261);
+            this.DgvUsuarios.Location = new System.Drawing.Point(12, 247);
             this.DgvUsuarios.MultiSelect = false;
             this.DgvUsuarios.Name = "DgvUsuarios";
             this.DgvUsuarios.ReadOnly = true;
             this.DgvUsuarios.RowHeadersVisible = false;
             this.DgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvUsuarios.Size = new System.Drawing.Size(966, 417);
+            this.DgvUsuarios.Size = new System.Drawing.Size(826, 328);
             this.DgvUsuarios.TabIndex = 9;
             this.DgvUsuarios.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DgvUsuarios_CellFormatting);
             this.DgvUsuarios.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvUsuarios_CellMouseDoubleClick);
@@ -331,9 +331,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::Escola_POO_BASE.Properties.Resources.LogoCad;
-            this.pictureBox1.Location = new System.Drawing.Point(727, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(622, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(242, 167);
+            this.pictureBox1.Size = new System.Drawing.Size(216, 146);
             this.pictureBox1.TabIndex = 27;
             this.pictureBox1.TabStop = false;
             // 
@@ -349,7 +349,7 @@
             this.groupBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.groupBox1.Location = new System.Drawing.Point(12, 192);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(957, 63);
+            this.groupBox1.Size = new System.Drawing.Size(604, 49);
             this.groupBox1.TabIndex = 28;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Painel de Busca";
@@ -359,11 +359,11 @@
             this.BtnLimparBusca.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.BtnLimparBusca.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnLimparBusca.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnLimparBusca.Location = new System.Drawing.Point(715, 20);
+            this.BtnLimparBusca.Location = new System.Drawing.Point(506, 18);
             this.BtnLimparBusca.Name = "BtnLimparBusca";
-            this.BtnLimparBusca.Size = new System.Drawing.Size(141, 29);
+            this.BtnLimparBusca.Size = new System.Drawing.Size(68, 21);
             this.BtnLimparBusca.TabIndex = 27;
-            this.BtnLimparBusca.Text = "LIMPAR BUSCA";
+            this.BtnLimparBusca.Text = "LIMPAR ";
             this.BtnLimparBusca.UseVisualStyleBackColor = false;
             this.BtnLimparBusca.Click += new System.EventHandler(this.BtnLimparBusca_Click);
             // 
@@ -372,9 +372,9 @@
             this.BtnBuscar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.BtnBuscar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.BtnBuscar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnBuscar.Location = new System.Drawing.Point(585, 19);
+            this.BtnBuscar.Location = new System.Drawing.Point(432, 18);
             this.BtnBuscar.Name = "BtnBuscar";
-            this.BtnBuscar.Size = new System.Drawing.Size(112, 30);
+            this.BtnBuscar.Size = new System.Drawing.Size(68, 21);
             this.BtnBuscar.TabIndex = 3;
             this.BtnBuscar.Text = "BUSCAR";
             this.BtnBuscar.UseVisualStyleBackColor = false;
@@ -382,9 +382,9 @@
             // 
             // TxtBuscar
             // 
-            this.TxtBuscar.Location = new System.Drawing.Point(280, 29);
+            this.TxtBuscar.Location = new System.Drawing.Point(219, 19);
             this.TxtBuscar.Name = "TxtBuscar";
-            this.TxtBuscar.Size = new System.Drawing.Size(257, 20);
+            this.TxtBuscar.Size = new System.Drawing.Size(198, 20);
             this.TxtBuscar.TabIndex = 2;
             this.TxtBuscar.TextChanged += new System.EventHandler(this.TxtBuscar_TextChanged);
             this.TxtBuscar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtBuscar_KeyPress);
@@ -398,16 +398,16 @@
             "E-mail",
             "Matrícula",
             ""});
-            this.CbbBuscar.Location = new System.Drawing.Point(89, 28);
+            this.CbbBuscar.Location = new System.Drawing.Point(86, 18);
             this.CbbBuscar.Name = "CbbBuscar";
-            this.CbbBuscar.Size = new System.Drawing.Size(161, 21);
+            this.CbbBuscar.Size = new System.Drawing.Size(127, 21);
             this.CbbBuscar.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.label1.Location = new System.Drawing.Point(6, 31);
+            this.label1.Location = new System.Drawing.Point(3, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(77, 13);
             this.label1.TabIndex = 0;
@@ -415,10 +415,10 @@
             // 
             // TelaCadastroAluno
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(981, 648);
+            this.ClientSize = new System.Drawing.Size(847, 581);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DgvUsuarios);
@@ -426,6 +426,7 @@
             this.Controls.Add(this.BtnLimpar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "TelaCadastroAluno";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "TelaCadastroAluno";
             this.Load += new System.EventHandler(this.TelaCadastroAluno_Load);
             this.Shown += new System.EventHandler(this.TelaCadastroAluno_Shown);
