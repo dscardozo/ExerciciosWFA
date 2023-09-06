@@ -113,11 +113,11 @@ namespace Escola_POO_BASE.Classes
             {
                 case 0:
                     //Busca por nome
-                    return professores.Where(p => p.Nome.ToUpper().Normalize(NormalizationForm.FormKD).Contains(texto.ToUpper())).ToList();
+                    return professores.Where(p => p.Nome.ToUpper().Normalize(NormalizationForm.FormD).Contains(texto.ToUpper().Normalize(NormalizationForm.FormD))).ToList();
                 //break; quando não for returno o Break é obrigatório
                 case 1:
                     // Busca por E-mail
-                    return professores.Where(p => p.Email.ToUpper().Normalize(NormalizationForm.FormKD).Contains(texto.ToUpper())).ToList();
+                    return professores.Where(p => p.Email.ToUpper().Normalize(NormalizationForm.FormD).Contains(texto.ToUpper().Normalize(NormalizationForm.FormD))).ToList();
                 //break; quando não for returno o Break é obrigatório
                 case 2:
                     // Buscar por matricula (id)

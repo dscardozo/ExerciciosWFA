@@ -110,6 +110,7 @@ namespace Escola_POO_BASE.Telas
             BtnAlterar.Enabled = false;
             BtnReativar.Enabled = false;
             BtnReativar.FlatAppearance.BorderColor = Color.Salmon;
+            CbbBuscar.SelectedIndex = 0;
         }
 
         private void BtnCadastrarTlCad_Click(object sender, EventArgs e)
@@ -351,6 +352,16 @@ namespace Escola_POO_BASE.Telas
             {
                 BtnBuscar.PerformClick();
             }
+        }
+
+        private void TxtBuscar_TextChanged(object sender, EventArgs e)
+        {
+            BtnBuscar.PerformClick();
+        }
+
+        private void TelaCadastroAluno_Shown(object sender, EventArgs e)
+        {
+            TxtBuscar.Focus();
         }
     }
 }

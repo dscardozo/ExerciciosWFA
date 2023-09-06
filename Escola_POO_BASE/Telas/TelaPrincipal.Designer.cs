@@ -45,7 +45,6 @@
             this.alunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.professorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.LblTexto = new System.Windows.Forms.Label();
             this.TmrRelogio = new System.Windows.Forms.Timer(this.components);
             this.StsBarraStatus.SuspendLayout();
             this.MnsMenu.SuspendLayout();
@@ -194,7 +193,7 @@
             this.alunoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alunoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.alunoToolStripMenuItem.Name = "alunoToolStripMenuItem";
-            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alunoToolStripMenuItem.Text = "Aluno";
             this.alunoToolStripMenuItem.Click += new System.EventHandler(this.alunoToolStripMenuItem_Click);
             // 
@@ -203,7 +202,7 @@
             this.professorToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.professorToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
-            this.professorToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.professorToolStripMenuItem.Text = "Professor";
             this.professorToolStripMenuItem.Click += new System.EventHandler(this.professorToolStripMenuItem_Click);
             // 
@@ -218,19 +217,6 @@
             this.sairToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
             // 
-            // LblTexto
-            // 
-            this.LblTexto.AutoSize = true;
-            this.LblTexto.BackColor = System.Drawing.Color.Transparent;
-            this.LblTexto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.LblTexto.Location = new System.Drawing.Point(269, 256);
-            this.LblTexto.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.LblTexto.Name = "LblTexto";
-            this.LblTexto.Size = new System.Drawing.Size(231, 18);
-            this.LblTexto.TabIndex = 0;
-            this.LblTexto.Text = "Bem Vindo a Tela Principal !!!!";
-            this.LblTexto.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // TmrRelogio
             // 
             this.TmrRelogio.Tick += new System.EventHandler(this.TmrRelogio_Tick);
@@ -240,13 +226,12 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.BackgroundImage = global::Escola_POO_BASE.Properties.Resources.BackLogo;
             this.ClientSize = new System.Drawing.Size(780, 527);
             this.Controls.Add(this.StsBarraStatus);
             this.Controls.Add(this.MnsMenu);
-            this.Controls.Add(this.LblTexto);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.MainMenuStrip = this.MnsMenu;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "TelaPrincipal";
@@ -277,7 +262,6 @@
         private System.Windows.Forms.ToolStripMenuItem TsiCadastros;
         private System.Windows.Forms.ToolStripMenuItem alunoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem professorToolStripMenuItem;
-        private System.Windows.Forms.Label LblTexto;
         private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
         private System.Windows.Forms.Timer TmrRelogio;
     }

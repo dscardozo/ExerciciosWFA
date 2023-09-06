@@ -52,7 +52,7 @@ namespace Escola_POO_BASE.Telas
 
             sairToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
 
-            LblTexto.Text = $"Seja Bem vindo à Tela Pincipal {_userLogado.Nome}";
+           
             TspNomeLogado.Text = _userLogado.Nome;
             TssEmailLogado.Text = _userLogado.Email;
             
@@ -83,24 +83,18 @@ namespace Escola_POO_BASE.Telas
         private void alunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
             TelaCadastroAluno tlCadAluno = new TelaCadastroAluno(_userLogado);
-           
+            tlCadAluno.MdiParent = this;
+            tlCadAluno.Show();            
             
-            
-            this.Hide();
-            tlCadAluno.ShowDialog();            
-            this.Show();
             
         }
 
         private void professorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaCadProfessor tlCadProf = new TelaCadProfessor(_userLogado);
+            TelaCadProfessor tlCadProf = new TelaCadProfessor(_userLogado);         
 
-
-
-            this.Hide();
-            tlCadProf.ShowDialog();
-            this.Show();
+            tlCadProf.MdiParent = this;
+            tlCadProf.Show();
         }
 
         private void sairToolStripMenuItem_Click(object sender, EventArgs e)

@@ -109,11 +109,11 @@ namespace Escola_POO_BASE.Telas
             {
                 case 0:
                     //Busca por nome
-                    return alunos.Where(a => a.Nome.ToUpper().Normalize(NormalizationForm.FormKD).Contains(texto.ToUpper())).ToList();
+                    return alunos.Where(a => a.Nome.ToUpper().Normalize(NormalizationForm.FormD).Contains(texto.ToUpper().Normalize(NormalizationForm.FormD))).ToList();
                 //break; quando não for returno o Break é obrigatório
                 case 1:
                     // Busca por E-mail
-                    return alunos.Where(a => a.Email.ToUpper().Normalize(NormalizationForm.FormKD).Contains(texto.ToUpper())).ToList();
+                    return alunos.Where(a => a.Email.ToUpper().Normalize(NormalizationForm.FormD).Contains(texto.ToUpper().Normalize(NormalizationForm.FormD))).ToList();
                 //break; quando não for returno o Break é obrigatório
                 case 2:
                     // Buscar por matricula (id)
