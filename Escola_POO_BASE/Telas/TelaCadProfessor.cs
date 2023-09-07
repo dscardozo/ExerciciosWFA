@@ -37,55 +37,55 @@ namespace Escola_POO_BASE.Telas
             }
         }
 
-        private void ConfiguraDgvUsuariosP()
+        private void ConfiguraDgvUsuarios()
         {
             // Criação das colunas no DgvUsuarios
-            DgvUsuariosP.Columns.Add("Id", "Matrícula");
-            DgvUsuariosP.Columns.Add("Nome", "Nome");
-            DgvUsuariosP.Columns.Add("Dtnascimento", "Data Nascimento");
-            DgvUsuariosP.Columns.Add("Cpf", "CPF");
-            DgvUsuariosP.Columns.Add("Email", "E-mail");
-            DgvUsuariosP.Columns.Add("NivelAcesso", "Nível de Acesso");
-            DgvUsuariosP.Columns.Add("Ativo", "Ativo");
+            DgvUsuarios.Columns.Add("Id", "Matrícula");
+            DgvUsuarios.Columns.Add("Nome", "Nome");
+            DgvUsuarios.Columns.Add("Dtnascimento", "Data Nascimento");
+            DgvUsuarios.Columns.Add("Cpf", "CPF");
+            DgvUsuarios.Columns.Add("Email", "E-mail");
+            DgvUsuarios.Columns.Add("NivelAcesso", "Nível de Acesso");
+            DgvUsuarios.Columns.Add("Ativo", "Ativo");
 
 
             //Configuração dos alinhamentos de cada coluna no DgvUsuarios
-            DgvUsuariosP.Columns["Id"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            DgvUsuariosP.Columns["Nome"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            DgvUsuariosP.Columns["Dtnascimento"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            DgvUsuariosP.Columns["Cpf"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            DgvUsuariosP.Columns["Email"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            DgvUsuariosP.Columns["NivelAcesso"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
-            DgvUsuariosP.Columns["Ativo"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            DgvUsuarios.Columns["Id"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            DgvUsuarios.Columns["Nome"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            DgvUsuarios.Columns["Dtnascimento"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            DgvUsuarios.Columns["Cpf"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            DgvUsuarios.Columns["Email"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            DgvUsuarios.Columns["NivelAcesso"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
+            DgvUsuarios.Columns["Ativo"].DefaultCellStyle.Alignment = DataGridViewContentAlignment.MiddleCenter;
 
             //Configuração dos tamanhos de cada coluna do DgvUsuarios
-            DgvUsuariosP.Columns["Id"].AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
-            DgvUsuariosP.Columns["Nome"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            DgvUsuariosP.Columns["DtNascimento"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            DgvUsuariosP.Columns["Cpf"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
-            DgvUsuariosP.Columns["NivelAcesso"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            DgvUsuariosP.Columns["Email"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
-            DgvUsuariosP.Columns["Ativo"].AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            DgvUsuarios.Columns["Id"].AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
+            DgvUsuarios.Columns["Nome"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DgvUsuarios.Columns["DtNascimento"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DgvUsuarios.Columns["Cpf"].AutoSizeMode = DataGridViewAutoSizeColumnMode.AllCells;
+            DgvUsuarios.Columns["NivelAcesso"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DgvUsuarios.Columns["Email"].AutoSizeMode = DataGridViewAutoSizeColumnMode.Fill;
+            DgvUsuarios.Columns["Ativo"].AutoSizeMode = DataGridViewAutoSizeColumnMode.ColumnHeader;
 
             //Configuarar tamanho em altura das linhas
-            DgvUsuariosP.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            DgvUsuariosP.ColumnHeadersHeight = 35;
-            DgvUsuariosP.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
+            DgvUsuarios.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            DgvUsuarios.ColumnHeadersHeight = 35;
+            DgvUsuarios.AutoSizeRowsMode = DataGridViewAutoSizeRowsMode.AllCells;
 
             //Configurar cor para intercalar linahs
-            DgvUsuariosP.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
+            DgvUsuarios.AlternatingRowsDefaultCellStyle.BackColor = Color.LightGray;
         }
 
         // Método para carregar o DvgUsuarios com os dados da lista
         private void CarregaDgvUsuarios(List<Professor> professores = null)
         {
-            DgvUsuariosP.Rows.Clear();
+            DgvUsuarios.Rows.Clear();
 
             foreach (Professor professor in professores == null ? _professores : professores)
             {
-                DgvUsuariosP.Rows.Add(professor.Id, professor.Nome, professor.DtNascimento.ToString("dd/MM/yyyy"), professor.Cpf, professor.Email,professor.NivelAcesso, professor.Ativo);
+                DgvUsuarios.Rows.Add(professor.Id, professor.Nome, professor.DtNascimento.ToString("dd/MM/yyyy"), professor.Cpf, professor.Email,professor.NivelAcesso, professor.Ativo);
                 if (!professor.Ativo)
-                    DgvUsuariosP.Rows[DgvUsuariosP.Rows.Count - 1].DefaultCellStyle.BackColor = Color.LightCoral;
+                    DgvUsuarios.Rows[DgvUsuarios.Rows.Count - 1].DefaultCellStyle.BackColor = Color.LightCoral;
             }
         }
 
@@ -102,7 +102,7 @@ namespace Escola_POO_BASE.Telas
             CkbAtivoTlCadastro.Checked = true;
             CkbAtivoTlCadastro.Enabled = false;
 
-            DgvUsuariosP.ClearSelection();
+            DgvUsuarios.ClearSelection();
             BtnCadastrarTlCad.Enabled = true;
             BtnAlterar.Enabled = false;
             BtnReativar.Enabled = false;
@@ -114,7 +114,7 @@ namespace Escola_POO_BASE.Telas
         {
             try
             {
-                ConfiguraDgvUsuariosP();
+                ConfiguraDgvUsuarios();
                 CarregaDgvUsuarios();
                 LimpaCampos();
             }
@@ -167,13 +167,13 @@ namespace Escola_POO_BASE.Telas
 
         private void DgvUsuariosP_SelectionChanged(object sender, EventArgs e)
         {
-            if (DgvUsuariosP.Rows.Count < 1 || DgvUsuariosP.SelectedRows.Count < 1)
+            if (DgvUsuarios.Rows.Count < 1 || DgvUsuarios.SelectedRows.Count < 1)
             {
                 return;
             }
             try
             {
-                _professorSelecionado = _professores.Find(a => a.Id == (int)DgvUsuariosP.SelectedRows[0].Cells[0].Value);
+                _professorSelecionado = _professores.Find(a => a.Id == (int)DgvUsuarios.SelectedRows[0].Cells[0].Value);
                 LblIdProf.Text = _professorSelecionado.Id.ToString();
                 TxtNomeTlCadP.Text = _professorSelecionado.Nome;
                 TxtEmailTlCadP.Text = _professorSelecionado.Email;
@@ -252,9 +252,9 @@ namespace Escola_POO_BASE.Telas
 
         private void DgvUsuariosP_CellFormatting(object sender, DataGridViewCellFormattingEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex == DgvUsuariosP.Columns["Ativo"].Index) // Verifica se é uma célula válida na coluna "Ativo"
+            if (e.RowIndex >= 0 && e.ColumnIndex == DgvUsuarios.Columns["Ativo"].Index) // Verifica se é uma célula válida na coluna "Ativo"
             {
-                DataGridViewRow row = DgvUsuariosP.Rows[e.RowIndex];
+                DataGridViewRow row = DgvUsuarios.Rows[e.RowIndex];
                 bool ativo = Convert.ToBoolean(row.Cells["Ativo"].Value);
 
                 if (!ativo)

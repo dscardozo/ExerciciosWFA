@@ -250,6 +250,7 @@ namespace Escola_POO_BASE.Telas
         }
         private void DgvUsuarios_CellMouseDoubleClick(object sender, DataGridViewCellMouseEventArgs e)
         {
+                        
             if (_alunoSelecionado.Ativo != true)
             {
                 try

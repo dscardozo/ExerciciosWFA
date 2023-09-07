@@ -5,6 +5,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Security.Principal;
 using System.Text;
 using System.Threading.Tasks;
@@ -22,12 +23,29 @@ namespace Escola_POO_BASE.Telas
     {
         private Usuario _userLogado;
         private List<Usuario> _usuarios;
-                
+        private List<Aluno> _alunos;
+        private List<Professor> _professores;
+
         public TelaPrincipal(Usuario usuarioLogado)
         {
             InitializeComponent();
             _userLogado = usuarioLogado;
+            _alunos = new List<Aluno>();
+            _professores = new List<Professor>();
             //GpbTelaPrincipal.Text = "Professor : ";
+
+            try
+            {
+                _alunos = Usuario.BuscarUsuarios().ConvertAll(u => (Aluno)u);
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message,
+                                   "Erro",
+                                   MessageBoxButtons.OK,
+                                   MessageBoxIcon.Error);
+            }
         }
         
         private void TelaPrincipal_Load(object sender, EventArgs e)
@@ -52,7 +70,16 @@ namespace Escola_POO_BASE.Telas
 
             sairToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
 
-           
+            // Painel de Relatório
+
+            LblAtivos.Text = _alunos.Where(a => a.Ativo == true).Count().ToString();
+            LblQtdAlunos.Text = _alunos.Count().ToString();
+            LblRemovidos.Text = _alunos.Where(aluno => aluno.Ativo == false).Count().ToString();
+
+
+
+
+
             TspNomeLogado.Text = _userLogado.Nome;
             TssEmailLogado.Text = _userLogado.Email;
             
@@ -128,6 +155,22 @@ namespace Escola_POO_BASE.Telas
         private void TmrRelogio_Tick(object sender, EventArgs e)
         {
             TssDataHora.Text = DateTime.Now.ToLongDateString() + "   " + DateTime.Now.ToLongTimeString();
-        }
+
+            try
+            {
+                _alunos = Usuario.BuscarUsuarios().ConvertAll(u => (Aluno)u);
+
+                LblAtivos.Text = _alunos.Where(a => a.Ativo == true).Count().ToString();
+                LblQtdAlunos.Text = _alunos.Count().ToString();
+                LblRemovidos.Text = _alunos.Where(aluno => aluno.Ativo == false).Count().ToString();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }        
+
     }
 }

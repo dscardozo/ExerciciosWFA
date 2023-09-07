@@ -41,12 +41,12 @@
             this.DtpDtMatriculaTlCad = new System.Windows.Forms.DateTimePicker();
             this.CkbAtivoTlCadastro = new System.Windows.Forms.CheckBox();
             this.LblId = new System.Windows.Forms.Label();
-            this.BtnAlterar = new System.Windows.Forms.Button();
             this.DtpDtNascimentoTlCad = new System.Windows.Forms.DateTimePicker();
             this.TxtNomeTlCad = new System.Windows.Forms.TextBox();
-            this.BtnCancelar = new System.Windows.Forms.Button();
-            this.BtnCadastrarTlCad = new System.Windows.Forms.Button();
+            this.BtnAlterar = new System.Windows.Forms.Button();
             this.BtnNovo = new System.Windows.Forms.Button();
+            this.BtnCadastrarTlCad = new System.Windows.Forms.Button();
+            this.BtnCancelar = new System.Windows.Forms.Button();
             this.TxtEmailTlCad = new System.Windows.Forms.TextBox();
             this.BtnLimpar = new System.Windows.Forms.Button();
             this.DgvUsuarios = new System.Windows.Forms.DataGridView();
@@ -193,21 +193,6 @@
             this.LblId.TabIndex = 7;
             this.LblId.Text = "Matrícula(ID) :";
             // 
-            // BtnAlterar
-            // 
-            this.BtnAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.BtnAlterar.Enabled = false;
-            this.BtnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnAlterar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnAlterar.Location = new System.Drawing.Point(246, 138);
-            this.BtnAlterar.Name = "BtnAlterar";
-            this.BtnAlterar.Size = new System.Drawing.Size(112, 29);
-            this.BtnAlterar.TabIndex = 21;
-            this.BtnAlterar.Text = "ALTERAR";
-            this.BtnAlterar.UseVisualStyleBackColor = false;
-            this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
-            // 
             // DtpDtNascimentoTlCad
             // 
             this.DtpDtNascimentoTlCad.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -227,19 +212,34 @@
             this.TxtNomeTlCad.Size = new System.Drawing.Size(286, 24);
             this.TxtNomeTlCad.TabIndex = 9;
             // 
-            // BtnCancelar
+            // BtnAlterar
             // 
-            this.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnCancelar.Location = new System.Drawing.Point(364, 138);
-            this.BtnCancelar.Name = "BtnCancelar";
-            this.BtnCancelar.Size = new System.Drawing.Size(112, 29);
-            this.BtnCancelar.TabIndex = 19;
-            this.BtnCancelar.Text = "CANCELAR";
-            this.BtnCancelar.UseVisualStyleBackColor = false;
-            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
+            this.BtnAlterar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.BtnAlterar.Enabled = false;
+            this.BtnAlterar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnAlterar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnAlterar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
+            this.BtnAlterar.Location = new System.Drawing.Point(246, 138);
+            this.BtnAlterar.Name = "BtnAlterar";
+            this.BtnAlterar.Size = new System.Drawing.Size(112, 29);
+            this.BtnAlterar.TabIndex = 21;
+            this.BtnAlterar.Text = "ALTERAR";
+            this.BtnAlterar.UseVisualStyleBackColor = false;
+            this.BtnAlterar.Click += new System.EventHandler(this.BtnAlterar_Click);
+            // 
+            // BtnNovo
+            // 
+            this.BtnNovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.BtnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnNovo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
+            this.BtnNovo.Location = new System.Drawing.Point(10, 138);
+            this.BtnNovo.Name = "BtnNovo";
+            this.BtnNovo.Size = new System.Drawing.Size(112, 29);
+            this.BtnNovo.TabIndex = 20;
+            this.BtnNovo.Text = "NOVO";
+            this.BtnNovo.UseVisualStyleBackColor = false;
+            this.BtnNovo.Click += new System.EventHandler(this.BtnNovo_Click);
             // 
             // BtnCadastrarTlCad
             // 
@@ -256,19 +256,19 @@
             this.BtnCadastrarTlCad.UseVisualStyleBackColor = false;
             this.BtnCadastrarTlCad.Click += new System.EventHandler(this.BtnCadastrarTlCad_Click);
             // 
-            // BtnNovo
+            // BtnCancelar
             // 
-            this.BtnNovo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.BtnNovo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.BtnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnNovo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
-            this.BtnNovo.Location = new System.Drawing.Point(10, 138);
-            this.BtnNovo.Name = "BtnNovo";
-            this.BtnNovo.Size = new System.Drawing.Size(112, 29);
-            this.BtnNovo.TabIndex = 20;
-            this.BtnNovo.Text = "NOVO";
-            this.BtnNovo.UseVisualStyleBackColor = false;
-            this.BtnNovo.Click += new System.EventHandler(this.BtnNovo_Click);
+            this.BtnCancelar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.BtnCancelar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.BtnCancelar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BtnCancelar.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(246)))), ((int)(((byte)(139)))), ((int)(((byte)(31)))));
+            this.BtnCancelar.Location = new System.Drawing.Point(364, 138);
+            this.BtnCancelar.Name = "BtnCancelar";
+            this.BtnCancelar.Size = new System.Drawing.Size(112, 29);
+            this.BtnCancelar.TabIndex = 19;
+            this.BtnCancelar.Text = "CANCELAR";
+            this.BtnCancelar.UseVisualStyleBackColor = false;
+            this.BtnCancelar.Click += new System.EventHandler(this.BtnCancelar_Click);
             // 
             // TxtEmailTlCad
             // 
@@ -321,7 +321,7 @@
             this.DgvUsuarios.ReadOnly = true;
             this.DgvUsuarios.RowHeadersVisible = false;
             this.DgvUsuarios.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.DgvUsuarios.Size = new System.Drawing.Size(826, 328);
+            this.DgvUsuarios.Size = new System.Drawing.Size(826, 567);
             this.DgvUsuarios.TabIndex = 9;
             this.DgvUsuarios.CellFormatting += new System.Windows.Forms.DataGridViewCellFormattingEventHandler(this.DgvUsuarios_CellFormatting);
             this.DgvUsuarios.CellMouseDoubleClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.DgvUsuarios_CellMouseDoubleClick);
@@ -418,7 +418,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(847, 581);
+            this.ClientSize = new System.Drawing.Size(847, 826);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.DgvUsuarios);
