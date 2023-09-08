@@ -34,9 +34,9 @@ namespace Escola_POO_BASE.Telas
             _professores = new List<Professor>();
             _usuarios = new List<Usuario>();
             //GpbTelaPrincipal.Text = "Professor : ";
-            
+
             try
-            {               
+            {
                 _alunos = Aluno.BuscarUsuariosA().ConvertAll(u => (Aluno)u);
                 _professores = Professor.BuscarUsuariosP().ConvertAll(u => (Professor)u);
                 _usuarios = Usuario.BuscarUsuariosP().ConvertAll(u => (Usuario)u);
@@ -51,11 +51,8 @@ namespace Escola_POO_BASE.Telas
                                    MessageBoxIcon.Error);
             }
         }
-        
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
-            
-
             /* IF Ternario
                 Caso o objeto _userLogado for do tipo Aluno, então armazenará na 
                 propriedade Text a palavra "Aluno", senão "Professor"
@@ -79,7 +76,7 @@ namespace Escola_POO_BASE.Telas
 
             TspNomeLogado.Text = _userLogado.Nome;
             TssEmailLogado.Text = _userLogado.Email;
-            
+
             TssDataHora.Text = DateTime.Now.ToLongDateString() + "   " + DateTime.Now.ToLongTimeString();
             TmrRelogio.Interval = 1000;
             TmrRelogio.Enabled = true;
@@ -92,39 +89,30 @@ namespace Escola_POO_BASE.Telas
              */
         }
 
-
         private void TspAlterarSenha_Click(object sender, EventArgs e)
         {
 
             TelaAltSenha telaAltSenha = new TelaAltSenha(_userLogado);
-                     
-            
+
             this.Hide();
             telaAltSenha.ShowDialog();
             this.Show();
         }
-
         private void alunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
             TelaCadastroAluno tlCadAluno = new TelaCadastroAluno(_userLogado);
-            tlCadAluno.MdiParent = this;
-            tlCadAluno.Show();            
-            
-            
-        }
 
+            tlCadAluno.MdiParent = this;
+            tlCadAluno.Show();
+        }
         private void professorToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            TelaCadProfessor tlCadProf = new TelaCadProfessor(_userLogado);         
+            TelaCadProfessor tlCadProf = new TelaCadProfessor(_userLogado);
 
             tlCadProf.MdiParent = this;
-            
+
             tlCadProf.Show();
         }
-
-        
-
         private void TmrRelogio_Tick(object sender, EventArgs e)
         {
             TssDataHora.Text = DateTime.Now.ToLongDateString() + "   " + DateTime.Now.ToLongTimeString();
@@ -143,14 +131,11 @@ namespace Escola_POO_BASE.Telas
             }
             catch (Exception)
             {
-
                 throw;
             }
-
         }
-
         private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
-        {           
+        {
             try
             {
                 DialogResult dr = MessageBox.Show($"Você realmente deseja Sair {_userLogado.Nome}?"
@@ -163,7 +148,6 @@ namespace Escola_POO_BASE.Telas
                 }
                 else
                     return;
-
             }
             catch (Exception ex)
             {
@@ -173,7 +157,6 @@ namespace Escola_POO_BASE.Telas
                                 MessageBoxIcon.Error);
             }
         }
-
         private void trocarToolStripMenuItem_Click(object sender, EventArgs e)
         {
             try
@@ -184,12 +167,10 @@ namespace Escola_POO_BASE.Telas
                               , MessageBoxIcon.Question);
                 if (dr == DialogResult.Yes)
                 {
-                    
                     TelaLogin tlLogin = new TelaLogin();
-                    
-                    tlLogin.Show();
-                    
-                }                
+                    tlLogin.ShowDialog();
+                    this.Close();
+                }
             }
             catch (Exception ex)
             {
@@ -197,7 +178,7 @@ namespace Escola_POO_BASE.Telas
                                 "Erro",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
-            }                      
+            }
         }
     }
 }
