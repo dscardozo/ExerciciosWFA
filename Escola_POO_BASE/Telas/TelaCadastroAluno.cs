@@ -27,7 +27,7 @@ namespace Escola_POO_BASE.Telas
 
             try
             {
-                _alunos = Usuario.BuscarUsuarios().ConvertAll(u => (Aluno)u);
+                _alunos = Usuario.BuscarUsuariosA().ConvertAll(u => (Aluno)u);
             }
             catch (Exception ex)
             {

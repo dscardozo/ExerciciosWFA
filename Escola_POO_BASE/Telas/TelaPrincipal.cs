@@ -32,11 +32,13 @@ namespace Escola_POO_BASE.Telas
             _userLogado = usuarioLogado;
             _alunos = new List<Aluno>();
             _professores = new List<Professor>();
+            _usuarios = new List<Usuario>();
             //GpbTelaPrincipal.Text = "Professor : ";
-
+            
             try
-            {
-                _alunos = Usuario.BuscarUsuarios().ConvertAll(u => (Aluno)u);
+            {               
+                _alunos = Aluno.BuscarUsuariosA().ConvertAll(u => (Aluno)u);
+                _professores = Professor.BuscarUsuariosP().ConvertAll(u => (Professor)u);
             }
             catch (Exception ex)
             {
@@ -50,35 +52,28 @@ namespace Escola_POO_BASE.Telas
         
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
-           
+            
 
             /* IF Ternario
                 Caso o objeto _userLogado for do tipo Aluno, então armazenará na 
                 propriedade Text a palavra "Aluno", senão "Professor"
-             */
+            
             //TslPerfilLogado.Text = _userLogado is Aluno ? "Aluno" : "Professor";
+             */
             if (_userLogado is Aluno)
             {
                 TsiCadastros.Visible = false;
                 TslPerfilLogado.Text = "Aluno";
+
             }
             else
             {
                 TsiCadastros.Visible = true;
                 TslPerfilLogado.Text = "Professor";
+
             }
 
             sairToolStripMenuItem.Alignment = ToolStripItemAlignment.Right;
-
-            // Painel de Relatório
-
-            LblAtivos.Text = _alunos.Where(a => a.Ativo == true).Count().ToString();
-            LblQtdAlunos.Text = _alunos.Count().ToString();
-            LblRemovidos.Text = _alunos.Where(aluno => aluno.Ativo == false).Count().ToString();
-
-
-
-
 
             TspNomeLogado.Text = _userLogado.Nome;
             TssEmailLogado.Text = _userLogado.Email;
@@ -158,11 +153,15 @@ namespace Escola_POO_BASE.Telas
 
             try
             {
-                _alunos = Usuario.BuscarUsuarios().ConvertAll(u => (Aluno)u);
-
-                LblAtivos.Text = _alunos.Where(a => a.Ativo == true).Count().ToString();
+                _alunos = Aluno.BuscarUsuariosA().ConvertAll(u => (Aluno)u);
+                LblAtivos.Text = _alunos.Where(u => u.Ativo == true).Count().ToString();
                 LblQtdAlunos.Text = _alunos.Count().ToString();
-                LblRemovidos.Text = _alunos.Where(aluno => aluno.Ativo == false).Count().ToString();
+                LblRemovidos.Text = _alunos.Where(u => u.Ativo == false).Count().ToString();
+
+                _professores = Professor.BuscarUsuariosP().ConvertAll(u => (Professor)u);
+                LblProfAtivos.Text = _professores.Where(u => u.Ativo == true).Count().ToString();
+                LblTotalProf.Text = _professores.Count().ToString();
+                LblProfInativo.Text = _professores.Where(u => u.Ativo == false).Count().ToString();
             }
             catch (Exception)
             {
@@ -171,6 +170,5 @@ namespace Escola_POO_BASE.Telas
             }
 
         }        
-
     }
 }

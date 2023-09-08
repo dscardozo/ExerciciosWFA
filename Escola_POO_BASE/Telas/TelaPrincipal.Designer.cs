@@ -53,6 +53,12 @@
             this.label3 = new System.Windows.Forms.Label();
             this.LblQtdAlunos = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.LblTotalProf = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.LblProfAtivos = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.LblProfInativo = new System.Windows.Forms.Label();
             this.StsBarraStatus.SuspendLayout();
             this.MnsMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -181,7 +187,7 @@
             this.TspAlterarSenha.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.TspAlterarSenha.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.TspAlterarSenha.Name = "TspAlterarSenha";
-            this.TspAlterarSenha.Size = new System.Drawing.Size(180, 22);
+            this.TspAlterarSenha.Size = new System.Drawing.Size(150, 22);
             this.TspAlterarSenha.Text = "Alterar Senha";
             this.TspAlterarSenha.Click += new System.EventHandler(this.TspAlterarSenha_Click);
             // 
@@ -201,7 +207,7 @@
             this.alunoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alunoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.alunoToolStripMenuItem.Name = "alunoToolStripMenuItem";
-            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.alunoToolStripMenuItem.Text = "Aluno";
             this.alunoToolStripMenuItem.Click += new System.EventHandler(this.alunoToolStripMenuItem_Click);
             // 
@@ -210,7 +216,7 @@
             this.professorToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.professorToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
-            this.professorToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.professorToolStripMenuItem.Text = "Professor";
             this.professorToolStripMenuItem.Click += new System.EventHandler(this.professorToolStripMenuItem_Click);
             // 
@@ -233,6 +239,12 @@
             // 
             this.panel1.BackColor = System.Drawing.Color.Transparent;
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.LblTotalProf);
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.LblProfAtivos);
+            this.panel1.Controls.Add(this.label8);
+            this.panel1.Controls.Add(this.LblProfInativo);
             this.panel1.Controls.Add(this.LblRemovidos);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.LblAtivos);
@@ -252,18 +264,18 @@
             this.LblRemovidos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.LblRemovidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblRemovidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblRemovidos.Location = new System.Drawing.Point(516, 7);
+            this.LblRemovidos.Location = new System.Drawing.Point(429, 9);
             this.LblRemovidos.Name = "LblRemovidos";
-            this.LblRemovidos.Size = new System.Drawing.Size(107, 15);
+            this.LblRemovidos.Size = new System.Drawing.Size(16, 15);
             this.LblRemovidos.TabIndex = 11;
-            this.LblRemovidos.Text = "Nº de Removidos";
+            this.LblRemovidos.Text = "0";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.label5.Location = new System.Drawing.Point(391, 7);
+            this.label5.Location = new System.Drawing.Point(304, 9);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(119, 13);
             this.label5.TabIndex = 10;
@@ -275,18 +287,18 @@
             this.LblAtivos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.LblAtivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblAtivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblAtivos.Location = new System.Drawing.Point(323, 5);
+            this.LblAtivos.Location = new System.Drawing.Point(273, 9);
             this.LblAtivos.Name = "LblAtivos";
-            this.LblAtivos.Size = new System.Drawing.Size(62, 15);
+            this.LblAtivos.Size = new System.Drawing.Size(16, 15);
             this.LblAtivos.TabIndex = 9;
-            this.LblAtivos.Text = "Nº Ativos";
+            this.LblAtivos.Text = "0";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.label3.Location = new System.Drawing.Point(225, 7);
+            this.label3.Location = new System.Drawing.Point(175, 9);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(92, 13);
             this.label3.TabIndex = 8;
@@ -298,11 +310,11 @@
             this.LblQtdAlunos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.LblQtdAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LblQtdAlunos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblQtdAlunos.Location = new System.Drawing.Point(142, 5);
+            this.LblQtdAlunos.Location = new System.Drawing.Point(142, 9);
             this.LblQtdAlunos.Name = "LblQtdAlunos";
-            this.LblQtdAlunos.Size = new System.Drawing.Size(77, 15);
+            this.LblQtdAlunos.Size = new System.Drawing.Size(16, 15);
             this.LblQtdAlunos.TabIndex = 7;
-            this.LblQtdAlunos.Text = "Nº de Aluno";
+            this.LblQtdAlunos.Text = "0";
             // 
             // label1
             // 
@@ -314,6 +326,75 @@
             this.label1.Size = new System.Drawing.Size(134, 13);
             this.label1.TabIndex = 6;
             this.label1.Text = "Quantidade de Aluno :";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.label2.Location = new System.Drawing.Point(478, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(168, 13);
+            this.label2.TabIndex = 7;
+            this.label2.Text = "Quantidade de Professores :";
+            // 
+            // LblTotalProf
+            // 
+            this.LblTotalProf.AutoSize = true;
+            this.LblTotalProf.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblTotalProf.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblTotalProf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblTotalProf.Location = new System.Drawing.Point(652, 7);
+            this.LblTotalProf.Name = "LblTotalProf";
+            this.LblTotalProf.Size = new System.Drawing.Size(16, 15);
+            this.LblTotalProf.TabIndex = 8;
+            this.LblTotalProf.Text = "0";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.label6.Location = new System.Drawing.Point(674, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(120, 13);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Professores Ativos :";
+            // 
+            // LblProfAtivos
+            // 
+            this.LblProfAtivos.AutoSize = true;
+            this.LblProfAtivos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblProfAtivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblProfAtivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblProfAtivos.Location = new System.Drawing.Point(800, 7);
+            this.LblProfAtivos.Name = "LblProfAtivos";
+            this.LblProfAtivos.Size = new System.Drawing.Size(16, 15);
+            this.LblProfAtivos.TabIndex = 10;
+            this.LblProfAtivos.Text = "0";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.label8.Location = new System.Drawing.Point(822, 9);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(130, 13);
+            this.label8.TabIndex = 11;
+            this.label8.Text = "Professores Inativos :";
+            // 
+            // LblProfInativo
+            // 
+            this.LblProfInativo.AutoSize = true;
+            this.LblProfInativo.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblProfInativo.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblProfInativo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblProfInativo.Location = new System.Drawing.Point(958, 7);
+            this.LblProfInativo.Name = "LblProfInativo";
+            this.LblProfInativo.Size = new System.Drawing.Size(16, 15);
+            this.LblProfInativo.TabIndex = 12;
+            this.LblProfInativo.Text = "0";
             // 
             // TelaPrincipal
             // 
@@ -370,5 +451,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label LblQtdAlunos;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label LblTotalProf;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label LblProfAtivos;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label LblProfInativo;
     }
 }

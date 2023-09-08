@@ -272,7 +272,7 @@ namespace Escola_POO_BASE.Classes
 
         }
 
-        public static List<Usuario> BuscarUsuarios()
+        public static List<Usuario> BuscarUsuariosA()
         {
 
             string query = string.Format("SELECT * FROM Aluno");
