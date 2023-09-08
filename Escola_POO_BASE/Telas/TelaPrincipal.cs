@@ -188,7 +188,7 @@ namespace Escola_POO_BASE.Telas
                     TelaLogin tlLogin = new TelaLogin();
                     
                     tlLogin.Show();
-                    TelaPrincipal.ActiveForm.Close();
+                    
                 }                
             }
             catch (Exception ex)
