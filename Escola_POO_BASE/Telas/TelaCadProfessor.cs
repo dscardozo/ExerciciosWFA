@@ -85,7 +85,14 @@ namespace Escola_POO_BASE.Telas
             {
                 DgvUsuarios.Rows.Add(professor.Id, professor.Nome, professor.DtNascimento.ToString("dd/MM/yyyy"), professor.Cpf, professor.Email,professor.NivelAcesso, professor.Ativo);
                 if (!professor.Ativo)
+                { 
                     DgvUsuarios.Rows[DgvUsuarios.Rows.Count - 1].DefaultCellStyle.BackColor = Color.LightCoral;
+                    if (_userLogado.NivelAcesso != 1)
+                    {
+                        DgvUsuarios.Rows[DgvUsuarios.Rows.Count - 1].Visible = false;
+                        DgvUsuarios.Columns[DgvUsuarios.Columns.Count - 1].Visible = false;
+                    }
+                }
             }
         }
 
@@ -223,7 +230,7 @@ namespace Escola_POO_BASE.Telas
                                     MessageBoxIcon.Error);
                 }
             }
-            else
+            else if (_userLogado.NivelAcesso == 1)
             {
                 try
                 {

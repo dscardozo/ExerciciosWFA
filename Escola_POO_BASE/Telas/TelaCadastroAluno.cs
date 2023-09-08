@@ -27,6 +27,7 @@ namespace Escola_POO_BASE.Telas
 
             try
             {
+                
                 _alunos = Usuario.BuscarUsuariosA().ConvertAll(u => (Aluno)u);
             }
             catch (Exception ex)
@@ -89,7 +90,14 @@ namespace Escola_POO_BASE.Telas
             {
                 DgvUsuarios.Rows.Add(aluno.Id, aluno.Nome, aluno.DtNascimento.ToString("dd/MM/yyyy"), aluno.DtMatricula, aluno.Email, aluno.Ativo);
                 if (!aluno.Ativo)
+                { 
                     DgvUsuarios.Rows[DgvUsuarios.Rows.Count - 1].DefaultCellStyle.BackColor = Color.LightCoral;
+                    if (_userLogado.NivelAcesso != 1)
+                    {
+                        DgvUsuarios.Rows[DgvUsuarios.Rows.Count - 1].Visible = false;
+                        DgvUsuarios.Columns[DgvUsuarios.Columns.Count - 1].Visible = false;
+                    }
+                }
             }
         }
 
@@ -266,8 +274,9 @@ namespace Escola_POO_BASE.Telas
                                     MessageBoxButtons.OK,
                                     MessageBoxIcon.Error);
                 }
-            }
-            else
+
+            }            
+            else if(_userLogado.NivelAcesso == 1)
             {
                 try
                 {

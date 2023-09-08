@@ -39,6 +39,8 @@ namespace Escola_POO_BASE.Telas
             {               
                 _alunos = Aluno.BuscarUsuariosA().ConvertAll(u => (Aluno)u);
                 _professores = Professor.BuscarUsuariosP().ConvertAll(u => (Professor)u);
+                _usuarios = Usuario.BuscarUsuariosP().ConvertAll(u => (Usuario)u);
+
             }
             catch (Exception ex)
             {
@@ -104,6 +106,7 @@ namespace Escola_POO_BASE.Telas
 
         private void alunoToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             TelaCadastroAluno tlCadAluno = new TelaCadastroAluno(_userLogado);
             tlCadAluno.MdiParent = this;
             tlCadAluno.Show();            
@@ -120,32 +123,7 @@ namespace Escola_POO_BASE.Telas
             tlCadProf.Show();
         }
 
-        private void sairToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            TelaLogin tlLogin = new TelaLogin();
-
-            try
-            {
-                DialogResult dr = MessageBox.Show($"Você realmente deseja Sair {_userLogado.Nome}?"
-                              , "Sair"
-                              , MessageBoxButtons.YesNo
-                              , MessageBoxIcon.Question);
-                if (dr == DialogResult.Yes)
-                {
-                   Close();
-                }
-                else
-                    return;
-
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message,
-                                "Erro",
-                                MessageBoxButtons.OK,
-                                MessageBoxIcon.Error);
-            }            
-        }
+        
 
         private void TmrRelogio_Tick(object sender, EventArgs e)
         {
@@ -169,6 +147,57 @@ namespace Escola_POO_BASE.Telas
                 throw;
             }
 
-        }        
+        }
+
+        private void sairToolStripMenuItem1_Click(object sender, EventArgs e)
+        {           
+            try
+            {
+                DialogResult dr = MessageBox.Show($"Você realmente deseja Sair {_userLogado.Nome}?"
+                              , "Sair"
+                              , MessageBoxButtons.YesNo
+                              , MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    Close();
+                }
+                else
+                    return;
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,
+                                "Erro",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
+        }
+
+        private void trocarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DialogResult dr = MessageBox.Show($"Você realmente Trocar de usuário {_userLogado.Nome}?"
+                              , "Trocar"
+                              , MessageBoxButtons.YesNo
+                              , MessageBoxIcon.Question);
+                if (dr == DialogResult.Yes)
+                {
+                    
+                    TelaLogin tlLogin = new TelaLogin();
+                    
+                    tlLogin.Show();
+                    TelaPrincipal.ActiveForm.Close();
+                }                
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message,
+                                "Erro",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }                      
+        }
     }
 }

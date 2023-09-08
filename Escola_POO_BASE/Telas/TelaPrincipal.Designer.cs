@@ -45,20 +45,22 @@
             this.alunoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.professorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.sairToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.trocarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.TmrRelogio = new System.Windows.Forms.Timer(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.LblRemovidos = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.LblAtivos = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.LblQtdAlunos = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.LblTotalProf = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.LblProfAtivos = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.LblProfInativo = new System.Windows.Forms.Label();
+            this.LblRemovidos = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.LblAtivos = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.LblQtdAlunos = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.StsBarraStatus.SuspendLayout();
             this.MnsMenu.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -207,7 +209,7 @@
             this.alunoToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.alunoToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.alunoToolStripMenuItem.Name = "alunoToolStripMenuItem";
-            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.alunoToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.alunoToolStripMenuItem.Text = "Aluno";
             this.alunoToolStripMenuItem.Click += new System.EventHandler(this.alunoToolStripMenuItem_Click);
             // 
@@ -216,20 +218,38 @@
             this.professorToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.professorToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.professorToolStripMenuItem.Name = "professorToolStripMenuItem";
-            this.professorToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.professorToolStripMenuItem.Size = new System.Drawing.Size(127, 22);
             this.professorToolStripMenuItem.Text = "Professor";
             this.professorToolStripMenuItem.Click += new System.EventHandler(this.professorToolStripMenuItem_Click);
             // 
             // sairToolStripMenuItem
             // 
+            this.sairToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.sairToolStripMenuItem1,
+            this.trocarToolStripMenuItem});
             this.sairToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.sairToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
             this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(40, 20);
-            this.sairToolStripMenuItem.Text = "Sair";
+            this.sairToolStripMenuItem.Size = new System.Drawing.Size(80, 20);
+            this.sairToolStripMenuItem.Text = "Trocar/Sair";
             this.sairToolStripMenuItem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.sairToolStripMenuItem.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
-            this.sairToolStripMenuItem.Click += new System.EventHandler(this.sairToolStripMenuItem_Click);
+            // 
+            // sairToolStripMenuItem1
+            // 
+            this.sairToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.sairToolStripMenuItem1.Name = "sairToolStripMenuItem1";
+            this.sairToolStripMenuItem1.Size = new System.Drawing.Size(180, 22);
+            this.sairToolStripMenuItem1.Text = "Sair";
+            this.sairToolStripMenuItem1.Click += new System.EventHandler(this.sairToolStripMenuItem1_Click);
+            // 
+            // trocarToolStripMenuItem
+            // 
+            this.trocarToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.trocarToolStripMenuItem.Name = "trocarToolStripMenuItem";
+            this.trocarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.trocarToolStripMenuItem.Text = "Trocar";
+            this.trocarToolStripMenuItem.Click += new System.EventHandler(this.trocarToolStripMenuItem_Click);
             // 
             // TmrRelogio
             // 
@@ -256,76 +276,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(988, 28);
             this.panel1.TabIndex = 5;
-            
-            // 
-            // LblRemovidos
-            // 
-            this.LblRemovidos.AutoSize = true;
-            this.LblRemovidos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LblRemovidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblRemovidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblRemovidos.Location = new System.Drawing.Point(429, 9);
-            this.LblRemovidos.Name = "LblRemovidos";
-            this.LblRemovidos.Size = new System.Drawing.Size(16, 15);
-            this.LblRemovidos.TabIndex = 11;
-            this.LblRemovidos.Text = "0";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.label5.Location = new System.Drawing.Point(304, 9);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(119, 13);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Alunos Removidos :";
-            // 
-            // LblAtivos
-            // 
-            this.LblAtivos.AutoSize = true;
-            this.LblAtivos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LblAtivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblAtivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblAtivos.Location = new System.Drawing.Point(273, 9);
-            this.LblAtivos.Name = "LblAtivos";
-            this.LblAtivos.Size = new System.Drawing.Size(16, 15);
-            this.LblAtivos.TabIndex = 9;
-            this.LblAtivos.Text = "0";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.label3.Location = new System.Drawing.Point(175, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(92, 13);
-            this.label3.TabIndex = 8;
-            this.label3.Text = "Alunos Ativos :";
-            // 
-            // LblQtdAlunos
-            // 
-            this.LblQtdAlunos.AutoSize = true;
-            this.LblQtdAlunos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.LblQtdAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblQtdAlunos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblQtdAlunos.Location = new System.Drawing.Point(142, 9);
-            this.LblQtdAlunos.Name = "LblQtdAlunos";
-            this.LblQtdAlunos.Size = new System.Drawing.Size(16, 15);
-            this.LblQtdAlunos.TabIndex = 7;
-            this.LblQtdAlunos.Text = "0";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
-            this.label1.Location = new System.Drawing.Point(2, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(134, 13);
-            this.label1.TabIndex = 6;
-            this.label1.Text = "Quantidade de Aluno :";
             // 
             // label2
             // 
@@ -396,6 +346,75 @@
             this.LblProfInativo.TabIndex = 12;
             this.LblProfInativo.Text = "0";
             // 
+            // LblRemovidos
+            // 
+            this.LblRemovidos.AutoSize = true;
+            this.LblRemovidos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblRemovidos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblRemovidos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblRemovidos.Location = new System.Drawing.Point(429, 9);
+            this.LblRemovidos.Name = "LblRemovidos";
+            this.LblRemovidos.Size = new System.Drawing.Size(16, 15);
+            this.LblRemovidos.TabIndex = 11;
+            this.LblRemovidos.Text = "0";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.label5.Location = new System.Drawing.Point(304, 9);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(119, 13);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Alunos Removidos :";
+            // 
+            // LblAtivos
+            // 
+            this.LblAtivos.AutoSize = true;
+            this.LblAtivos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblAtivos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblAtivos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblAtivos.Location = new System.Drawing.Point(273, 9);
+            this.LblAtivos.Name = "LblAtivos";
+            this.LblAtivos.Size = new System.Drawing.Size(16, 15);
+            this.LblAtivos.TabIndex = 9;
+            this.LblAtivos.Text = "0";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.label3.Location = new System.Drawing.Point(175, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(92, 13);
+            this.label3.TabIndex = 8;
+            this.label3.Text = "Alunos Ativos :";
+            // 
+            // LblQtdAlunos
+            // 
+            this.LblQtdAlunos.AutoSize = true;
+            this.LblQtdAlunos.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.LblQtdAlunos.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblQtdAlunos.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblQtdAlunos.Location = new System.Drawing.Point(142, 9);
+            this.LblQtdAlunos.Name = "LblQtdAlunos";
+            this.LblQtdAlunos.Size = new System.Drawing.Size(16, 15);
+            this.LblQtdAlunos.TabIndex = 7;
+            this.LblQtdAlunos.Text = "0";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(75)))), ((int)(((byte)(141)))));
+            this.label1.Location = new System.Drawing.Point(2, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(134, 13);
+            this.label1.TabIndex = 6;
+            this.label1.Text = "Quantidade de Aluno :";
+            // 
             // TelaPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
@@ -457,5 +476,7 @@
         private System.Windows.Forms.Label LblProfAtivos;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label LblProfInativo;
+        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem trocarToolStripMenuItem;
     }
 }

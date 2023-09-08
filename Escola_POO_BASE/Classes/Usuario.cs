@@ -13,7 +13,7 @@ namespace Escola_POO_BASE.Classes
 
     public class Usuario
     {
-        
+
         #region Propriedades
         public int Id { get; set; }
         public string Nome { get; set; }
@@ -216,7 +216,9 @@ namespace Escola_POO_BASE.Classes
                     throw;
                 }
             }
+
         }
+
         // Gerar Listas 
         //public static List<Usuario> GerarUsuarios()
         //{
@@ -303,39 +305,40 @@ namespace Escola_POO_BASE.Classes
                 throw;
             }
         }
-        public static List<Usuario> BuscarUsuariosP() { 
-                string query = string.Format("SELECT * FROM Professor");
-                Conexao cn = new Conexao(query);
-                List<Usuario> usuarios = new List<Usuario>();
-                try
+        public static List<Usuario> BuscarUsuariosP()
+        {
+            string query = string.Format("SELECT * FROM Professor");
+            Conexao cn = new Conexao(query);
+            List<Usuario> usuarios = new List<Usuario>();
+            try
+            {
+                cn.AbrirConexao();
+                cn.dr = cn.comando.ExecuteReader();
+                while (cn.dr.Read())
                 {
-                    cn.AbrirConexao();
-                    cn.dr = cn.comando.ExecuteReader();
-                    while (cn.dr.Read())
+                    usuarios.Add(new Professor()
                     {
-                        usuarios.Add(new Professor()
-                        {
-                            Id = Convert.ToInt32(cn.dr[0]),
-                            Nome = cn.dr[1].ToString(),
-                            DtNascimento = Convert.ToDateTime(cn.dr[2]),
-                            Cpf = cn.dr[3].ToString(),
-                            Email = cn.dr[4].ToString(),
-                            Senha = cn.dr[5].ToString(),
-                            NivelAcesso = Convert.ToInt32(cn.dr[6]),
-                            Ativo = Convert.ToBoolean(cn.dr[7])
-                        });
-                    }
-                    return usuarios;
+                        Id = Convert.ToInt32(cn.dr[0]),
+                        Nome = cn.dr[1].ToString(),
+                        DtNascimento = Convert.ToDateTime(cn.dr[2]),
+                        Cpf = cn.dr[3].ToString(),
+                        Email = cn.dr[4].ToString(),
+                        Senha = cn.dr[5].ToString(),
+                        NivelAcesso = Convert.ToInt32(cn.dr[6]),
+                        Ativo = Convert.ToBoolean(cn.dr[7])
+                    });
                 }
-                catch (Exception)
-                {
+                return usuarios;
+            }
+            catch (Exception)
+            {
 
-                    throw;
-                }
+                throw;
+            }
 
         }
     }
-        #endregion
-    
+    #endregion
+
 }
 
